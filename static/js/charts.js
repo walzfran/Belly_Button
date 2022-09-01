@@ -91,6 +91,8 @@ function buildCharts(sample) {
     ];
     // 9. Create the layout for the bar chart. 
     var barLayout = { title: "Subject's Top 10 Bacteria Cultures", 
+    font: {color: "darkblue", family: "Arial"},
+    paper_bgcolor: "lavender",
     margin: {t: 40, b: 40, l: 90, r: 5}
      
     };
@@ -116,6 +118,8 @@ function buildCharts(sample) {
     var bubbleLayout = {title: "Total Bacteria Cultures Per Sample",
     margin: {t: 50, b: 50, l: 50, r: 50},
     hovermode: "closest",
+    paper_bgcolor: "royalblue",
+    font: {color: "white", family: "Arial"},
     xaxis: {title: "OTU ID"},
     yaxis: {title: "Sample Value (PPM)"}
       
@@ -146,7 +150,7 @@ function buildCharts(sample) {
             { range: [8, 10], color: "darkblue" }
           ],
           threshold: {
-            line: { color: "black", width: 4 },
+            line: { color: "white", width: 4 },
             thickness: 0.75,
             value: 10
           }
@@ -158,9 +162,9 @@ function buildCharts(sample) {
     var gaugeLayout = {
       width: 500,
       height: 400,
-      margin: { t: 25, r: 25, l: 25, b: 25 },
-      paper_bgcolor: "lightgrey",
-      font: { color: "darkblue", family: "Arial" }
+      margin: { t: 40, r: 40, l: 40, b: 40 },
+      paper_bgcolor: "white",
+      font: { color: "royalblue", family: "Arial" }
     
      
     };
